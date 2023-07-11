@@ -1,0 +1,30 @@
+Traditional Spring Disadvantages::
+
+We use xml and annotations for modules like Core, mvc,dao.
+All modules should be present in pom.xml and they should be compatible with each other.
+
+SpringBoot Features::
+
+1)Auto Configuration :: eg for mvc, it will automatically configure Dispatcher Servlet.For ORM, Spring Boot will automatically configure datasource and
+Transaction manager.
+
+2)SpringBoot Starters:: Spring boot will take away the problem of "Module Availability" and "Version Control." eg spring-boot-starter-parent::It is present
+in every spring-boot project .
+spring-boot-starter-web:: For web projectt, we need to include it.We dont need to include any other dependency etc.
+
+spring-boot-starter-data-jpa::For jpa
+
+3)Embedded Servlet Container::We dot need to deploy to external containers, it comes with embedded tomcat,jetty
+
+4)spring boot actuators:: Following health checks are present::
+
+a)autoconfig::Will display auto configuration end-points.
+
+b)mappings::  Give all http request mapping for application.
+
+c)info::Will give information about application
+
+d)health::Displays application health condition.
+
+e)metrics::Shows different metrics collected from application.
+
